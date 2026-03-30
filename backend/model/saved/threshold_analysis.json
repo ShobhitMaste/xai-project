@@ -1,0 +1,37 @@
+[
+  {
+    "threshold": 0.3,
+    "precision": 0.7887,
+    "recall": 0.9032,
+    "f1": 0.8421,
+    "accuracy": 0.822
+  },
+  {
+    "threshold": 0.4,
+    "precision": 0.7933,
+    "recall": 0.8871,
+    "f1": 0.8376,
+    "accuracy": 0.8192
+  },
+  {
+    "threshold": 0.5,
+    "precision": 0.8119,
+    "recall": 0.8817,
+    "f1": 0.8454,
+    "accuracy": 0.8305
+  },
+  {
+    "threshold": 0.6,
+    "precision": 0.809,
+    "recall": 0.8656,
+    "f1": 0.8364,
+    "accuracy": 0.822
+  },
+  {
+    "threshold": 0.7,
+    "precision": 0.8177,
+    "recall": 0.8441,
+    "f1": 0.8307,
+    "accuracy": 0.8192
+  }
+]

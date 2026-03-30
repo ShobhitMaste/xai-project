@@ -1,0 +1,38 @@
+{
+  "epochs": 4,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "early_stopping_patience": 2,
+  "train_size": 2829,
+  "val_size": 354,
+  "test_size": 354,
+  "use_dreaddit": true,
+  "csv_paths": [
+    "/content/project/resources/dreaddit-train.csv",
+    "/content/project/resources/dreaddit-test.csv",
+    "/content/project/resources/dreaddit_StressAnalysis - Sheet1.csv"
+  ],
+  "extra_hf_datasets": [],
+  "text_col": "text",
+  "label_col": "label",
+  "multi_task": true,
+  "corpus_stats": {
+    "source_counts": {
+      "dreaddit": 3537,
+      "csv:dreaddit-train.csv": 2822,
+      "csv:dreaddit-test.csv": 715,
+      "csv:dreaddit_StressAnalysis - Sheet1.csv": 715
+    },
+    "merged_summary": {
+      "num_rows": 3537,
+      "label_counts": {
+        "0": 1683,
+        "1": 1854
+      },
+      "duplicates_by_text": 6,
+      "avg_tokens": 86.52,
+      "min_tokens": 1,
+      "max_tokens": 313
+    }
+  }
+}

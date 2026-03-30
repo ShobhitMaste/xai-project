@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "description": "Hand-written slice for negation, short calm, and obvious stress. Labels match full API pipeline (threshold + guardrails).",
+  "cases": [
+    {"id": "neg-1", "text": "i am not stressed", "expected": "Not Stressed"},
+    {"id": "neg-2", "text": "i'm not stressed at all", "expected": "Not Stressed"},
+    {"id": "neg-3", "text": "no stress today", "expected": "Not Stressed"},
+    {"id": "neg-4", "text": "stress free day", "expected": "Not Stressed"},
+    {"id": "neg-5", "text": "never stressed about it", "expected": "Not Stressed"},
+    {"id": "calm-1", "text": "i am calm all the time", "expected": "Uncertain"},
+    {"id": "calm-2", "text": "i feel calm", "expected": "Not Stressed", "accept": ["Not Stressed", "Uncertain"]},
+    {"id": "calm-3", "text": "everything is fine", "expected": "Not Stressed", "accept": ["Not Stressed", "Uncertain"]},
+    {"id": "str-1", "text": "i am overwhelmed with deadlines and cannot sleep", "expected": "Stressed"},
+    {"id": "str-2", "text": "constant anxiety and panic at work", "expected": "Stressed"},
+    {"id": "str-3", "text": "burning out from too much pressure", "expected": "Stressed"},
+    {"id": "str-4", "text": "i am stressed", "expected": "Stressed"},
+    {"id": "str-5", "text": "mental breakdown energy every night", "expected": "Stressed"},
+    {"id": "neg-long", "text": "not stressed but i am tired", "expected": "Not Stressed", "accept": ["Not Stressed", "Stressed", "Uncertain"]},
+    {"id": "str-short", "text": "overwhelmed", "expected": "Stressed", "accept": ["Stressed", "Uncertain"]}
+  ]
+}
