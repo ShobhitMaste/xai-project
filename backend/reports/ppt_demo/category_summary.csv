@@ -1,0 +1,9 @@
+category,cases,passed,failed,accuracy,avg_probability,avg_agreement
+anxiety,1,1,0,1.0,0.9812,0.8333
+burnout,1,1,0,1.0,0.977,1.0
+calm,2,2,0,1.0,0.0696,0.9166
+distress,1,1,0,1.0,0.9809,1.0
+mixed,2,1,1,0.5,0.6075,0.7857
+negation,2,2,0,1.0,0.0778,1.0
+sleep,1,1,0,1.0,0.9801,1.0
+workload,2,2,0,1.0,0.9802,1.0

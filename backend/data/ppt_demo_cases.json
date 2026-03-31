@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "description": "Curated presentation/demo cases covering negation, calm text, clear stress language, and borderline situations.",
+  "cases": [
+    {
+      "id": "neg-1",
+      "category": "negation",
+      "text": "I am not stressed at all today.",
+      "expected": "Not Stressed"
+    },
+    {
+      "id": "neg-2",
+      "category": "negation",
+      "text": "This feels like a stress free evening and I am relaxed.",
+      "expected": "Not Stressed"
+    },
+    {
+      "id": "calm-1",
+      "category": "calm",
+      "text": "Everything is fine and I feel calm.",
+      "expected": "Not Stressed",
+      "accept": ["Not Stressed", "Uncertain"]
+    },
+    {
+      "id": "calm-2",
+      "category": "calm",
+      "text": "I am okay and just resting after a normal day.",
+      "expected": "Not Stressed",
+      "accept": ["Not Stressed", "Uncertain"]
+    },
+    {
+      "id": "stress-1",
+      "category": "workload",
+      "text": "I am overwhelmed with deadlines and cannot sleep.",
+      "expected": "Stressed"
+    },
+    {
+      "id": "stress-2",
+      "category": "workload",
+      "text": "The workload is crushing me and I feel constant pressure.",
+      "expected": "Stressed"
+    },
+    {
+      "id": "stress-3",
+      "category": "burnout",
+      "text": "I feel exhausted, burned out, and mentally drained.",
+      "expected": "Stressed"
+    },
+    {
+      "id": "stress-4",
+      "category": "anxiety",
+      "text": "I am anxious all day and panic before every meeting.",
+      "expected": "Stressed"
+    },
+    {
+      "id": "stress-5",
+      "category": "distress",
+      "text": "Family problems have left me hopeless and stuck.",
+      "expected": "Stressed"
+    },
+    {
+      "id": "stress-6",
+      "category": "sleep",
+      "text": "My heart races every night and I cannot relax anymore.",
+      "expected": "Stressed"
+    },
+    {
+      "id": "mixed-1",
+      "category": "mixed",
+      "text": "I am tired, but I am not stressed right now.",
+      "expected": "Not Stressed",
+      "accept": ["Not Stressed", "Uncertain"]
+    },
+    {
+      "id": "mixed-2",
+      "category": "mixed",
+      "text": "There is a lot going on and I do not know how I feel.",
+      "expected": "Uncertain",
+      "accept": ["Uncertain", "Not Stressed"]
+    }
+  ]
+}

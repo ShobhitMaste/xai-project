@@ -3,14 +3,14 @@
   "batch_size": 16,
   "learning_rate": 2e-05,
   "early_stopping_patience": 2,
-  "train_size": 2829,
-  "val_size": 354,
-  "test_size": 354,
+  "train_size": 2912,
+  "val_size": 364,
+  "test_size": 365,
   "use_dreaddit": true,
   "csv_paths": [
-    "/content/project/resources/dreaddit-train.csv",
-    "/content/project/resources/dreaddit-test.csv",
-    "/content/project/resources/dreaddit_StressAnalysis - Sheet1.csv"
+    "/content/colab_pack/resources/dreaddit-test.csv",
+    "/content/colab_pack/resources/dreaddit-train.csv",
+    "/content/colab_pack/resources/dreaddit_StressAnalysis - Sheet1.csv"
   ],
   "extra_hf_datasets": [],
   "text_col": "text",
@@ -18,21 +18,24 @@
   "multi_task": true,
   "corpus_stats": {
     "source_counts": {
+      "hard_negatives_seed": 104,
       "dreaddit": 3537,
-      "csv:dreaddit-train.csv": 2822,
       "csv:dreaddit-test.csv": 715,
+      "csv:dreaddit-train.csv": 2822,
       "csv:dreaddit_StressAnalysis - Sheet1.csv": 715
     },
     "merged_summary": {
-      "num_rows": 3537,
+      "num_rows": 3641,
       "label_counts": {
-        "0": 1683,
-        "1": 1854
+        "0": 1768,
+        "1": 1873
       },
       "duplicates_by_text": 6,
-      "avg_tokens": 86.52,
+      "avg_tokens": 84.14,
       "min_tokens": 1,
       "max_tokens": 313
     }
-  }
+  },
+  "pretrained_model": "bert-base-uncased",
+  "include_hard_negative_seed": true
 }
